@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="content-section">
+        <legend class="border-bottom mb-4">My drones</legend>
+    </div>
+    {% for it in values %}
+        <div class="content-section">
+
+            <p class='text-muted'>Drone 
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-light">Drone Name: {{it.model_name}}</li>
+                </ul>
+            
+            <small class="text-muted", style="float: left;">
+              plane a flight <a class="ml-2" href="{{ url_for('planaflight',d = it.model_name) }}">Click here</a>
+            </small>
+            </p>
+
+
+        </div>
+        
+    {% endfor %}
+		
+{% endblock %}

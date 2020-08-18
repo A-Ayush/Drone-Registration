@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block title %} Drone Details {% endblock %}
+{% block content %}
+	<div class="content-section">
+        
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Enter Your Drone Details</legend>
+                <div>
+                    {{ form.Dronename.label(class="form-control-label") }}
+                    <input class="form-control form-control-lg" id="Dronename" name="Dronename" required="" type="text" value="{{ values[0].model_name }}">
+                </div>
+                <div>
+                    {{ form.nameOfManufacture.label(class="form-control-label") }}
+                     <input class="form-control form-control-lg" id="nameOfManufacture" name="nameOfManufacture" required="" type="text" value="{{ values[0].nameOfManufacture }}"> 
+                </div>
+                <div>
+                    {{ form.droneType.label(class="form-control-label") }}
+                    <input class="form-control form-control-lg" id="droneType" name="droneType" required="" type="text" value="{{ values[0].droneType }}">
+                   
+                </div>
+                <div>
+                    {{ form.maxTakeOffWeight.label(class="form-control-label") }}
+                    <input class="form-control form-control-lg" id="maxTakeOffWeight" name="maxTakeOffWeight" required="" type="text" value="{{ values[0].maxTakeOffWeight }}">
+                </div>
+                <div>
+                    {{ form.maxHeightAttainable.label(class="form-control-label") }}
+                    <input class="form-control form-control-lg" id="maxHeightAttainable" name="maxHeightAttainable" required="" type="text" value="{{ values[0].maxHeightAttainable }}">
+                </div>
+             </fieldset>
+             <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+         </form>
+        </div>
+
+{% endblock %}
