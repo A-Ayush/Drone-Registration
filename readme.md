@@ -1,6 +1,6 @@
-# Flask-Intro with structured format
+# Flask-Intro with structured format for the installation of this repo to your PC
 
-*You can refer to Flask’s documentation.
+*You can refer to Flask’s documentation for more information.
 [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)*
 
 ## Requirements file consists the following:
@@ -42,7 +42,7 @@ $ source <env_name>/bin/activate
 - install all the dependencies as mentioned in **Reqirements**
 $ python3 <env_name>/bin/activate
 $ pip install -r <requirements.txt> file
-## Running Command
+## To Run Project
 
 With the virtual environment activated you can cd into any of the examples and run the main script.
 
