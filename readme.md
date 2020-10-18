@@ -1,4 +1,4 @@
-# Flask-Intro with structured format for the installation of this repo to your PC
+# Flask-Intro for the installation of this repo to your PC
 
 *You can refer to Flask’s documentation for more information.
 [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)*
