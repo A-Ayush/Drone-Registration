@@ -1,9 +1,9 @@
 # Flask-Intro with structured format
 
-*Your can refer to Flask’s documentations.
+*You can refer to Flask’s documentation.
 [Flask Documentation](https://flask.palletsprojects.com/en/1.1.x/)*
 
-## Requirements
+## Requirements file consists the following:
 
 -bcrypt==3.1.7
 -cffi==1.14.0
@@ -21,6 +21,7 @@
 -SQLAlchemy==1.3.16
 -Werkzeug==1.0.1
 -WTForms==2.2.1
+-Gunicorn=20.1
 
 ## Installation
 
@@ -32,11 +33,21 @@ $ virtualenv venv
 $ . venv/bin/activate
 (venv) $ **your source file**
 
-- install all the dependencies as mentioned in **Reqirements**
+or 
+On linux system,
+$ python3 -m venv <env_name>
+To activate the env just type in terminal,
+$ source <env_name>/bin/activate
 
+- install all the dependencies as mentioned in **Reqirements**
+$ python3 <env_name>/bin/activate
+$ pip install -r <requirements.txt> file
 ## Running Command
 
 With the virtual environment activated you can cd into any of the examples and run the main script.
 
 (venv) $ python mypage.py
+or 
+(venv) $ export FLASK_APP=<file_name.py>
+(venv) $ flask run
 
